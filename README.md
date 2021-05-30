@@ -1,7 +1,8 @@
 Just having fun trying to recreate basic Rails functionality with pure ruby, no gems.
-Inspiration and a lot of code in this repository comes from @OngMaple's amazing talk on Building web apps with Ruby, at Euruko 2021 (https://www.youtube.com/watch?v=sPLZStp1K0c&t=17023s).
 
-To start the server, simply run `ruby server.rb`
+Inspiration and a lot of code in this repository comes from @OngMaple's amazing talk on Building web apps with Ruby, at Euruko 2021 (https://www.youtube.com/watch?v=sPLZStp1K0c&t=17023s) and @pedrogaspar's follow up on creating a TCP chat server (https://twitter.com/pedrogaspar/status/1398798494169772032).
+
+To start the server, simply run `ruby server.rb`.
 
 **Index page**
 
