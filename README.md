@@ -1,4 +1,5 @@
 Just having fun trying to recreate basic Rails functionality with pure ruby, no gems.
+Inspiration and a lot of code in this repository comes from @OngMaple's amazing talk on Building web apps with Ruby, at Euruko 2021 (https://www.youtube.com/watch?v=sPLZStp1K0c&t=17023s).
 
 To start the server, simply run `ruby server.rb`
 
