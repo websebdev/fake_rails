@@ -12,7 +12,7 @@ class PostsController < FakeRails::Controller
 
   def show
     database.transaction do
-      @post = OpenStruct.new(database[:posts][0])
+      @post = OpenStruct.new(database[:posts][params[:id].to_i])
     end
   end
 end
