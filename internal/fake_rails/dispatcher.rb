@@ -60,7 +60,7 @@ module FakeRails
     def request_url_with_params
       return @request_url_with_params if @request_url_with_params
 
-      # replace params to correctly match path with params, ex. /posts/2 to /posts/:id
+      # update params to correctly match paths with keywords, ex. /posts/2 to /posts/:id
       url_parts = request_url.split("/")
       paths.each do |path|
         path_url_parts = path[:url].split("/")

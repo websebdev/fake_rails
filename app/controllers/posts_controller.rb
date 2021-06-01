@@ -2,17 +2,12 @@ require "./internal/fake_rails/controller.rb"
 
 class PostsController < FakeRails::Controller
   def index
-    @posts = []
-    database.transaction do
-      @posts = database[:posts]
-    end
+    @posts = database.transaction { database[:posts] }
 
     @posts = @posts.map {|p| OpenStruct.new(p)}
   end
 
   def show
-    database.transaction do
-      @post = OpenStruct.new(database[:posts][params[:id].to_i])
-    end
+    @post = database.transaction { OpenStruct.new(database[:posts][params[:id].to_i]) }
   end
 end
